@@ -4,24 +4,6 @@ A real-time face recognition system for Princeton University dormitory access co
 
 **Live Demo:** [](https://tiger-dorm-security-frontend.vercel.app)
 
-## Project Structure
-project-root/
-├── frontend/
-│   ├── src/
-│   │   └── app/
-│   │       └── (Next.js pages and components)
-│   └── public/
-│       └── (static assets and default room configurations)
-│
-└── backend/
-    ├── main.py
-    ├── face_matching.py
-    ├── princeton_face_embeddings.py
-    ├── princeton_face_embeddings.npz
-    ├── princeton_face_embeddings_metadata.txt
-    └── PRINCETON_STUDENTS/
-        └── (source images organized by residential college)
-
 ## Face Embeddings
 
 The system uses **InsightFace** to generate 512-dimensional face embeddings from student photos. These embeddings are stored in:
