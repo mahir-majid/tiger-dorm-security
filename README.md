@@ -1,22 +1,26 @@
 # Tiger Dorm Security
 
-A real-time face recognition system for dormitory access control. The application uses webcam input to detect and identify individuals, allowing authorized access management for different rooms and spaces.
+A real-time face recognition system for Princeton University dormitory access control. The application uses webcam input to detect and identify individuals, allowing authorized access management for different rooms and spaces.
 
-**Live Demo:** [Frontend](https://tiger-dorm-security-frontend.vercel.app)
+**Live Demo:** [](https://tiger-dorm-security-frontend.vercel.app)
 
 ## Project Structure
-
-├── frontend/ # Next.js React application
-│ ├── src/app/ # Main application pages and components
-│ └── public/ # Static assets (default room configurations)
+project-root/
+├── frontend/
+│   ├── src/
+│   │   └── app/
+│   │       └── (Next.js pages and components)
+│   └── public/
+│       └── (static assets and default room configurations)
 │
-└── backend/ # FastAPI Python application
-├── main.py # API endpoints and server configuration
-├── face_matching.py # Face detection and matching logic
-├── princeton_face_embeddings.py # Embedding computation utilities
-├── princeton_face_embeddings.npz # Pre-computed face embeddings
-├── princeton_face_embeddings_metadata.txt # Metadata mapping embeddings to names
-└── PRINCETON_STUDENTS/ # Source images organized by residential college
+└── backend/
+    ├── main.py
+    ├── face_matching.py
+    ├── princeton_face_embeddings.py
+    ├── princeton_face_embeddings.npz
+    ├── princeton_face_embeddings_metadata.txt
+    └── PRINCETON_STUDENTS/
+        └── (source images organized by residential college)
 
 ## Face Embeddings
 
