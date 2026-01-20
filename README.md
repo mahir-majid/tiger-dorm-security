@@ -2,7 +2,7 @@
 
 A real-time face recognition system for Princeton University dormitory access control. The application uses webcam input to detect and identify individuals, allowing authorized access management for different rooms and spaces.
 
-**Live Demo:** [](https://tiger-dorm-security-frontend.vercel.app)
+**Live Demo:** [https://tiger-dorm-security-frontend.vercel.app](https://tiger-dorm-security-frontend.vercel.app)
 
 ## Face Embeddings
 
