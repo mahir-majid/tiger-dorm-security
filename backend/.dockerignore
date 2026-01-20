@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Exclude large data folders
+ECE faculty/
+ECE Grad/
+PRINCETON_STUDENTS/
+TEST_DATA/
+
+# Exclude old/unused files
+ece_488_final_project_face_embeddings.npz
+ece_488_final_project_face_embeddings_metadata.txt
+*.csv
+
+# Exclude text files except required ones
+*.txt
+!princeton_names.txt
+!princeton_face_embeddings_metadata.txt
+!requirements.txt
+
+# Exclude npz files except required ones
+*.npz
+!princeton_face_embeddings.npz
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+*.md
+README*
+
+# Test files
+*_test.py
+test_*.py
+princeton_test.py
+princeton_test_results.csv
+
+# Utility scripts
+extract_names.py
+face_segmentation.py
+generate_default_db.py
+update_college_students_with_ece.py
+append_ece_embeddings.py
+
+# Database files (not needed)
+db.json
+db.py
+allowed_users.json
+college_students.json
+
+# API folder (removed)
+api/

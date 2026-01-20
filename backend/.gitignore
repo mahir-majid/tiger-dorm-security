@@ -1,0 +1,35 @@
+# Student data folders
+PRINCETON_STUDENTS/
+ECE faculty/
+ECE Grad/
+TEST_DATA/
+
+# Test results
+princeton_test_results.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+princeton_face_embeddings.npz
+princeton_face_embeddings_metadata.txt
+princeton_names.txt
+fly.toml
