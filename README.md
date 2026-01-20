@@ -1,0 +1,41 @@
+# Tiger Dorm Security
+
+A real-time face recognition system for dormitory access control. The application uses webcam input to detect and identify individuals, allowing authorized access management for different rooms and spaces.
+
+**Live Demo:** [Frontend](https://tiger-dorm-security-frontend.vercel.app)
+
+## Project Structure
+
+├── frontend/ # Next.js React application
+│ ├── src/app/ # Main application pages and components
+│ └── public/ # Static assets (default room configurations)
+│
+└── backend/ # FastAPI Python application
+├── main.py # API endpoints and server configuration
+├── face_matching.py # Face detection and matching logic
+├── princeton_face_embeddings.py # Embedding computation utilities
+├── princeton_face_embeddings.npz # Pre-computed face embeddings
+├── princeton_face_embeddings_metadata.txt # Metadata mapping embeddings to names
+└── PRINCETON_STUDENTS/ # Source images organized by residential college
+
+## Face Embeddings
+
+The system uses **InsightFace** to generate 512-dimensional face embeddings from student photos. These embeddings are stored in:
+- `princeton_face_embeddings.npz` - NumPy compressed array of all face embeddings
+- `princeton_face_embeddings_metadata.txt` - Text file mapping each embedding to the person's name
+
+When a face is detected via webcam, its embedding is compared against the stored embeddings using cosine similarity to identify the person.
+
+## Use Case
+
+Designed for Princeton University residential colleges, the system allows:
+- **Real-time face recognition** from webcam feed
+- **Room-based access control** - assign authorized individuals to specific rooms/spaces
+- **Default rooms** - Pre-configured for Princeton residential colleges (Butler, Forbes, Mathey, NCW, Rocky, Whitman, Yeh)
+- **Custom rooms** - Create and manage custom access groups
+
+## Technology Stack
+
+- **Frontend:** Next.js 15, React 19, TypeScript, Tailwind CSS
+- **Backend:** FastAPI, Python, InsightFace, OpenCV
+- **Deployment:** Vercel (frontend), Fly.io (backend)
