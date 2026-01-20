@@ -10,18 +10,9 @@ The system uses **InsightFace** to generate 512-dimensional face embeddings from
 - `princeton_face_embeddings.npz` - NumPy compressed array of all face embeddings
 - `princeton_face_embeddings_metadata.txt` - Text file mapping each embedding to the person's name
 
-When a face is detected via webcam, its embedding is compared against the stored embeddings using cosine similarity to identify the person.
-
-## Use Case
-
-Designed for Princeton University residential colleges, the system allows:
-- **Real-time face recognition** from webcam feed
-- **Room-based access control** - assign authorized individuals to specific rooms/spaces
-- **Default rooms** - Pre-configured for Princeton residential colleges (Butler, Forbes, Mathey, NCW, Rocky, Whitman, Yeh)
-- **Custom rooms** - Create and manage custom access groups
+The two files listed above are not included in the repository and are ignored via .gitignore, but at runtime, when a face is detected via webcam, its embedding is compared against the stored embeddings using cosine similarity to identify the person.
 
 ## Technology Stack
-
-- **Frontend:** Next.js 15, React 19, TypeScript, Tailwind CSS
+- **Frontend:** Next.js, TypeScript, Tailwind CSS
 - **Backend:** FastAPI, Python, InsightFace, OpenCV
 - **Deployment:** Vercel (frontend), Fly.io (backend)
