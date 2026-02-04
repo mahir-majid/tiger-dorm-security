@@ -5,7 +5,7 @@ A real-time face recognition system for Princeton University dormitory access co
 **Live Demo:** [https://tiger-dorm-security-frontend.vercel.app](https://tiger-dorm-security-frontend.vercel.app)
 
 ## Face Embeddings
-The system uses **InsightFace** to generate 512-dimensional face embeddings from student photos. For each image, InsightFace runs a CNN-based face detection model to locate faces, applies landmark-based alignment to normalize pose, and then passes the aligned face through an ArcFace-based deep recognition CNN to produce a stable embedding vector. Identity matching is performed separately by comparing embeddings using cosine similarity rather than direct classification. These embeddings are stored in:
+The system uses **InsightFace** to generate 512-dimensional face embeddings from student photos. For each image, InsightFace runs a CNN-based face detection model to locate faces, applies landmark-based alignment to normalize pose, and then passes the aligned face through an ArcFace-based deep recognition CNN to produce a embedding vector. Identity matching is performed separately by comparing embeddings using cosine similarity. These embeddings are stored in:
 - `princeton_face_embeddings.npz` - NumPy compressed array of all face embeddings
 - `princeton_face_embeddings_metadata.txt` - Text file mapping each embedding to the person's name
 
